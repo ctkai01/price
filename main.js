@@ -8,9 +8,10 @@ setInterval(() => {
     const dayOfWeek = moment().format('e')
     
     const dateTime = `${dayOfWeekString[dayOfWeek]}, Ngày ${day} tháng ${month} năm ${year} - ${time}`
-    console.log(dateTime)
     
     document.querySelector('.time').textContent = dateTime
 }, 1000)
 
-// console.log(moment.)
+
+const listPrice = document.querySelectorAll('.price_value')
+console.log(listPrice)

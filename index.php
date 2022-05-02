@@ -24,7 +24,7 @@ include('./database.php')
                 <div class="text-main">Giá Vàng Hôm Nay</div>
                 <div class="text-contact">
                     <div class="time" style="margin-bottom: 5px; color:coral"></div>
-                    <div class="address" style="margin-bottom: 10px;">Khu 3 - Cát Thịnh - Văn Chấn - Yên Bái</div>
+                    <div class="address" style="margin-bottom: 10px;">Ngã 3 - Cát Thịnh - Văn Chấn - Yên Bái</div>
                     <div class="phone">ĐT: 0346 147 495</div>
                 </div>
             </div>
@@ -53,8 +53,8 @@ include('./database.php')
                         while ($row = $result->fetch_assoc()) {
                             echo "<tr>
                             <td>".$row['name']."</td>
-                            <td>".$row['mua_vao']."</td>
-                            <td>".$row['ban_ra']."</td>
+                            <td class='price_value'>".$row['mua_vao']."</td>
+                            <td class='price_value'>".$row['ban_ra']."</td>
                         </tr>";
                         }
                     } else {
@@ -75,11 +75,12 @@ include('./database.php')
         </div>
     </main>
     <footer>
-        <marquee direction="left">Hello Nam</marquee>
+        <marquee direction="left">Doanh nghiệp Vàng Bạc Việt Hoàn Kính Chào Quý Khách - Chúc Quý Khách Hàng An Khanh Thịnh Vượng </marquee>
     </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/locale/vi.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+<script src="https://unpkg.com/currency.js@~2.0.0/dist/currency.min.js"></script>
 <script src="./main.js"></script>
 
 </html>
