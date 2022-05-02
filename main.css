@@ -81,7 +81,7 @@ main {
 
 footer {
   background-color: #000;
-  flex-grow: 20;
+  flex-grow: 25;
 }
 
 .header-main {
@@ -166,6 +166,7 @@ thead tr th {
 
 marquee { 
     font-size: 30px;
+    padding: 10px 0;
     display: flex;
     color: rgb(43, 235, 43);
     align-items: center;
