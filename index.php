@@ -16,7 +16,7 @@ include('./database.php')
 <body>
     <header>
         <!-- <div class="symbol-header" style="background-color: blue;"> -->
-        <img src="./logo.jpg" class="logo" height="70" />
+        <img src="./logo_ring.png" class="logo" height="80" />
         <!-- </div> -->
         <div class="content-header">
             <div class="title">DANH NGHIỆP VÀNG BẠC VIỆT HOÀN</div>
