@@ -6,7 +6,6 @@ if (
     && isset($_POST['3name']) && isset($_POST['3ban_ra']) && isset($_POST['3mua_vao'])
     && isset($_POST['4name']) && isset($_POST['4ban_ra']) && isset($_POST['4mua_vao'])
     && isset($_POST['5name']) && isset($_POST['5ban_ra']) && isset($_POST['5mua_vao'])
-    && isset($_POST['6name']) && isset($_POST['6ban_ra']) && isset($_POST['6mua_vao'])
     && isset($_POST['7name']) && isset($_POST['7ban_ra']) && isset($_POST['7mua_vao'])
     && isset($_POST['8name']) && isset($_POST['8ban_ra']) && isset($_POST['8mua_vao'])
 ) {
@@ -18,7 +17,6 @@ if (
         (3, '" . $_POST['3name'] . "', '" . $_POST['3mua_vao'] . "', '" . $_POST['3ban_ra'] . "'),
         (4, '" . $_POST['4name'] . "', '" . $_POST['4mua_vao'] . "', '" . $_POST['4ban_ra'] . "'),
         (5, '" . $_POST['5name'] . "', '" . $_POST['5mua_vao'] . "', '" . $_POST['5ban_ra'] . "'),
-        (6, '" . $_POST['6name'] . "', '" . $_POST['6mua_vao'] . "', '" . $_POST['6ban_ra'] . "'),
         (7, '" . $_POST['7name'] . "', '" . $_POST['7mua_vao'] . "', '" . $_POST['7ban_ra'] . "'),
         (8, '" . $_POST['8name'] . "', '" . $_POST['8mua_vao'] . "', '" . $_POST['8ban_ra'] . "') as t
         ON DUPLICATE KEY UPDATE id=t.id,

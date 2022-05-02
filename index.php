@@ -25,7 +25,7 @@ include('./database.php')
                 <div class="text-contact">
                     <div class="time" style="margin-bottom: 5px; color:coral"></div>
                     <div class="address" style="margin-bottom: 10px;">Khu 3 - Cát Thịnh - Văn Chấn - Yên Bái</div>
-                    <div class="phone">ĐT: 039 417 8514</div>
+                    <div class="phone">ĐT: 0346 147 495</div>
                 </div>
             </div>
         </div>
