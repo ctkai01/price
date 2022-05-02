@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+header {
+  flex-grow: 60;
+  display: flex;
+  background-color: #000;
+  position: relative;
+  /* background-color: #000; */
+}
+
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+header .symbol-header {
+  flex: 2;
+}
+
+header .content-header {
+  /* flex: 10; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header .content-header .title {
+  color: rgb(253, 233, 55);
+  font-size: 40px;
+  flex: 1;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .content-header .content {
+  position: relative;
+  flex: 1;
+}
+
+header .content-header .text-main {
+  height: 100%;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: rgb(221, 23, 1);
+}
+
+header .content-header .text-contact {
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  flex-grow: 60;
+  background-color: red;
+}
+
+footer {
+  background-color: #000;
+  flex-grow: 20;
+}
+
+.header-main {
+  position: relative;
+}
+
+.header-main .title-unit {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-family: 700;
+  font-size: 24px;
+}
+
+.header-main .title-main {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: 700;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.price-container {
+  display: flex;
+  margin-top: 5px;
+}
+
+.price-container table {
+  flex: 2;
+}
+
+.price-container .symbol-container .title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.price-container .symbol-container {
+  flex: 1;
+ 
+}
+
+.logo-container {
+    
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  width: 33.3%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(253, 233, 55);
+}
+
+td,
+th {
+  border: 2px solid #fff;
+  /* padding: 0.5rem; */
+  text-align: left;
+  padding: 25px;
+
+}
+
+thead tr th {
+  text-align: center;
+  color: rgb(253, 233, 55);
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 4px solid #fff;
+}
+
+marquee { 
+    font-size: 26px;
+    display: flex;
+    color: rgb(43, 235, 43);
+    align-items: center;
+    height: 100%;
+}
