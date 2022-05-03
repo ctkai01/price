@@ -15,7 +15,7 @@ setInterval(() => {
 
 const listPrice = document.querySelectorAll('.price_value')
 
-listPrice.forEach(price => {
-    price.textContent = currency(Number(price.textContent), { precision: 0, separator: '.', symbol: '' }).format();
-})
+// listPrice.forEach(price => {
+    // price.textContent = currency(Number(price.textContent), { precision: 0, separator: '.', symbol: '' }).format();
+// })
 // console.log(listPrice)
