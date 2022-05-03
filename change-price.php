@@ -47,11 +47,13 @@ include('./database.php')
                     echo($name);
                     echo "<div class='input-group'>
                     <span class='space'>".$row['name']."</span>
-                    <span class='form-control'>Mua vào</span>
-                    <span class='form-control'>Bán ra</span>
+                   
+                   
                 </div>
                     <span class='input-group-text'>".$row['name']."</span>
+                    <span class=''>Mua vào:</span>
                     <input type='text' name=".$row['id'].'mua_vao'." class='form-control number-separator' value=".$row['mua_vao'].">
+                    <span class=''>Bán ra:</span>
                     <input type='text' name=".$row['id'].'ban_ra'." class='form-control number-separator' value=".$row['ban_ra'].">
                 <input type='hidden' name=".$row['id'].'name'." value='".$row['name']."'>
                 <div class='line'></div>
