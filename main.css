@@ -139,13 +139,7 @@ table {
   border-collapse: collapse;
 }
 
-table td {
-  width: 33.3%;
-  text-align: center;
-  font-weight: 700;
-  font-size: 26px;
-  color: rgb(253, 233, 55);
-}
+
 
 td,
 th {
@@ -155,6 +149,14 @@ th {
   padding: 25px;
 
 }
+
+table td {
+    width: 33.3%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(253, 233, 55);
+  }
 
 thead tr th {
   text-align: center;
