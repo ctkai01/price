@@ -44,17 +44,18 @@ include('./database.php')
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     $name = $row['name'];
-                    echo($name);
-                    echo "<div class='input-group'>
-                    <span class='space'>".$row['name']."</span>
-                   
-                   
-                </div>
+                    // echo($name);
+                    echo 
+                    "
                     <span class='input-group-text'>".$row['name']."</span>
-                    <span class=''>Mua vào:</span>
-                    <input type='text' name=".$row['id'].'mua_vao'." class='form-control number-separator' value=".$row['mua_vao'].">
-                    <span class=''>Bán ra:</span>
-                    <input type='text' name=".$row['id'].'ban_ra'." class='form-control number-separator' value=".$row['ban_ra'].">
+                    <div class='d-flex'>
+                        <span class='w-25'>Mua vào</span>
+                        <input type='text' name=".$row['id'].'mua_vao'." class='form-control number-separator' value=".$row['mua_vao'].">
+                    </div>
+                    <div class='d-flex'>
+                        <span class='w-25'>Bán ra</span>
+                        <input type='text' name=".$row['id'].'ban_ra'." class='form-control number-separator' value=".$row['ban_ra'].">
+                    </div>
                 <input type='hidden' name=".$row['id'].'name'." value='".$row['name']."'>
                 <div class='line'></div>
                 ";
