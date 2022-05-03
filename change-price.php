@@ -50,11 +50,9 @@ include('./database.php')
                     <span class='form-control'>Mua vào</span>
                     <span class='form-control'>Bán ra</span>
                 </div>
-                <div class='input-group'>
                     <span class='input-group-text'>".$row['name']."</span>
                     <input type='text' name=".$row['id'].'mua_vao'." class='form-control number-separator' value=".$row['mua_vao'].">
                     <input type='text' name=".$row['id'].'ban_ra'." class='form-control number-separator' value=".$row['ban_ra'].">
-                </div>
                 <input type='hidden' name=".$row['id'].'name'." value='".$row['name']."'>
                 <div class='line'></div>
                 ";
