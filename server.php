@@ -13,18 +13,17 @@ if (
         INSERT INTO railway.price (id, name, ban_ra, mua_vao) 
         VALUES 
         (1, '" . $_POST['1name'] . "', '" . $_POST['1ban_ra'] . "', '" . $_POST['1mua_vao'] . "'),
-        (2, '" . $_POST['2name'] . "', '" . $_POST['2mua_vao'] . "', '" . $_POST['2ban_ra'] . "'),
-        (3, '" . $_POST['3name'] . "', '" . $_POST['3mua_vao'] . "', '" . $_POST['3ban_ra'] . "'),
-        (4, '" . $_POST['4name'] . "', '" . $_POST['4mua_vao'] . "', '" . $_POST['4ban_ra'] . "'),
-        (5, '" . $_POST['5name'] . "', '" . $_POST['5mua_vao'] . "', '" . $_POST['5ban_ra'] . "'),
-        (7, '" . $_POST['7name'] . "', '" . $_POST['7mua_vao'] . "', '" . $_POST['7ban_ra'] . "'),
-        (8, '" . $_POST['8name'] . "', '" . $_POST['8mua_vao'] . "', '" . $_POST['8ban_ra'] . "') as t
+        (2, '" . $_POST['2name'] . "', '" . $_POST['2ban_ra'] . "', '" . $_POST['2mua_vao'] . "'),
+        (3, '" . $_POST['3name'] . "', '" . $_POST['3ban_ra'] . "', '" . $_POST['3mua_vao'] . "'),
+        (4, '" . $_POST['4name'] . "', '" . $_POST['4ban_ra'] . "', '" . $_POST['4mua_vao'] . "'),
+        (5, '" . $_POST['5name'] . "', '" . $_POST['5ban_ra'] . "', '" . $_POST['5mua_vao'] . "'),
+        (7, '" . $_POST['7name'] . "', '" . $_POST['7ban_ra'] . "', '" . $_POST['7mua_vao'] . "'),
+        (8, '" . $_POST['8name'] . "', '" . $_POST['8ban_ra'] . "', '" . $_POST['8mua_vao'] . "') as t
         ON DUPLICATE KEY UPDATE id=t.id,
         name=t.name,
         mua_vao=t.mua_vao,
         ban_ra=t.ban_ra;
         ";
-
     try {
         if ($conn->query($sql)) {
             header("Location: change-price.php");
