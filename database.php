@@ -1,9 +1,9 @@
 <?php
-$servername = "containers-us-west-46.railway.app";
+$servername = "containers-us-west-84.railway.app";
 $username = "root";
-$password = "WlxBIeib8wIVmI0hbI6h";
+$password = "iKcwV6Josb54gaohe1G0";
 $dbname = "railway";
-$port = 5848;
+$port = 6974;
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
